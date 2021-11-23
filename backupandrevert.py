@@ -5,7 +5,10 @@ db_user_name = "root"
 db_user_password = "rootroot"
 work_space = os.getcwd()+"/history"
 
-print("### 欢迎使用数据库备份恢复系统 ###\n"
+if not os.path.exists(work_space):
+    os.makedirs(work_space)
+
+print("### 欢迎使用数据库备份恢复系统1.0 ###\n"
       "------当前数据库：%s\n"
       "------当前的用户：%s\n"
       "------当前的密码：%s\n"
